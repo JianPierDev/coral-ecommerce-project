@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+build/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Sass cache
+.sass-cache/
+
+# Environment variables
+.env
+
+# Editor settings
+.vscode/

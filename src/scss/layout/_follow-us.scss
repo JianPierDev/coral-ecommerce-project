@@ -1,0 +1,36 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.follow-us{
+    background-color: v.$gray;
+    &__content {
+        @include m.container;
+        
+    }
+}
+.subscribe{
+    width: min(76rem, 90%);
+    margin: 0 auto;
+    &-inputs {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        input {
+            color: v.$dark-blue;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            border-bottom: 2px solid v.$black;
+            padding: 1rem;
+        }
+        input[type="email"] {
+            width: 64rem;
+        }
+        input[type="submit"] {
+            text-transform: uppercase;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}

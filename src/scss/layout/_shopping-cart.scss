@@ -1,0 +1,118 @@
+@use 'sass:color'; // Importante para las nuevas funciones de color
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.shopping-cart {
+    @include m.container;
+    padding: 5rem 0;
+
+    &__content {
+        @include m.grid(1, 2rem);
+        
+        @include m.tablet {
+            grid-template-columns: 2fr 1fr;
+            align-items: start;
+        }
+    }
+
+    &__result {
+        background-color: v.$white;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        padding: 3rem;
+        border-radius: 1rem;
+        
+        display: grid;
+        grid-template-columns: repeat(6, auto);
+        place-items: center;
+        gap: 2rem;
+
+        .cart-column-title {
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            color: color.adjust(v.$dark-blue, $lightness: 20%); // Reemplazo de lighten
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        a {
+            font-size: 1.6rem;
+            color: v.$dark-blue;
+            text-decoration: none;
+            &:hover { color: v.$black; }
+        }
+
+        img {
+            border-radius: 0.5rem;
+            object-fit: contain;
+        }
+
+        .amount {
+            display: flex;
+            justify-content: center;
+        }
+
+        &.empty {
+            display: flex;
+            flex-direction: column;
+            grid-column: 1 / -1;
+            padding: 8rem 0;
+            background-color: transparent;
+            box-shadow: none;
+            
+            p { font-size: 2rem; color: v.$dark-blue; }
+            a {
+                color: #ff6344;
+                font-weight: bold;
+                text-decoration: underline;
+                margin-top: 1rem;
+            }
+        }
+    }
+
+    &__summary {
+        background-color: v.$white;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        padding: 3rem;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        h3 {
+            margin: 0;
+            color: v.$dark-blue;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1rem;
+        }
+
+        .resumen-fila {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            border-bottom: 1px solid #f1f1f1;
+
+            span {
+                font-size: 1.6rem;
+                color: v.$dark-blue;
+            }
+
+            &.total {
+                border-bottom: none;
+                margin-top: 1rem;
+                span {
+                    font-weight: bold;
+                    font-size: 2.2rem;
+                    color: v.$black;
+                }
+            }
+        }
+    }
+}
+.stepper {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}

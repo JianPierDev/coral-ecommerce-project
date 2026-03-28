@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-fixed">
+            <p class="header__bar">✨Free shipping on orders over $50 | Spring Sale: Up to 40% Off</p>
+            <div class="header__nav">
+                <a class="header__logo" href="index.html">
+                    <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-menu-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21 6a1 1 0 0 1 -1 1h-16a1 1 0 1 1 0 -2h16a1 1 0 0 1 1 1" /><path d="M21 12a1 1 0 0 1 -1 1h-16a1 1 0 0 1 0 -2h16a1 1 0 0 1 1 1" /><path d="M21 18a1 1 0 0 1 -1 1h-16a1 1 0 0 1 0 -2h16a1 1 0 0 1 1 1" /></svg>
+                    <h1>Coral</h1>
+                </a>
+                <div class="header__search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" data-fg-d5jy17="1.31:9.634:/src/app/components/Header.tsx:43:15:1520:85:e:Search::::::B9rK" data-fgid-d5jy17=":rd:"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+                    <input id="search-product" type="text" placeholder="Search....">
+                </div>
+                <div id="search-results" class="search-results"></div>
+                <div class="user-options">
+                    <button id="account" class="option">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user w-6 h-6 text-gray-700 group-hover:text-coral-600 transition-colors" data-fg-d5jy22="1.31:9.634:/src/app/components/Header.tsx:55:15:2172:87:e:User::::::wpV" data-fgid-d5jy22=":rh:"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    </button>
+                    <button id="shop" class="option">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart w-6 h-6 text-gray-700 hover:text-coral-600 transition-colors" data-fg-d5jy26="1.31:9.634:/src/app/components/Header.tsx:61:15:2658:89:e:ShoppingCart::::::BPYc" data-fgid-d5jy26=":rk:"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>
+                        <div class="cart">
+                            <table id= list-cart>
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th>Cantidad</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <div class="btns-card-hover">
+                                <a href="cart.html" class="btn-cart go-to-cart">Go to cart</a>
+                                <a href="#" class="btn-cart empty-cart">Empty cart</a>
+                            </div>
+                        </div><!--.store-->
+                    </button><!--.shop-->
+                </div><!--.user-options-->
+            </div><!--.header-nav-->
+            <nav id="nav" class="nav">
+                <a href="#">Jewelry & Accessories</a>
+                <a href="#">Clothing & Shoes</a>
+                <a href="#">Home & Living</a>
+                <a href="#">Wedding & Party</a>
+                <a href="#">Toys & Entertainment</a>
+                <a href="#">Art & Collectibles</a>
+                <a href="#">Craft Supplies & Tools</a>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+    
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="social">
+                <h3>About Coral</h3>
+                <p>Your marketplace for unique, handcrafted items. Discover one-of-a-kind pieces created by independent artisans from around the world.</p>
+                <div class="social-media">
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-meta"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 10.174c1.766 -2.784 3.315 -4.174 4.648 -4.174c2 0 3.263 2.213 4 5.217c.704 2.869 .5 6.783 -2 6.783c-1.114 0 -2.648 -1.565 -4.148 -3.652a27.627 27.627 0 0 1 -2.5 -4.174" /><path d="M12 10.174c-1.766 -2.784 -3.315 -4.174 -4.648 -4.174c-2 0 -3.263 2.213 -4 5.217c-.704 2.869 -.5 6.783 2 6.783c1.114 0 2.648 -1.565 4.148 -3.652c1 -1.391 1.833 -2.783 2.5 -4.174" /></svg></a>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4l11.733 16h4.267l-11.733 -16l-4.267 0" /><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" /></svg></a>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 11v5" /><path d="M8 8v.01" /><path d="M12 16v-5" /><path d="M16 16v-3a2 2 0 1 0 -4 0" /><path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4l0 -10" /></svg></a>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4l0 -8" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M16.5 7.5v.01" /></svg></a>
+                </div>
+            </div>
+<div class="catalog">
+                    <h3>Catalog</h3>
+                    <ul>
+                        <a href="#"><li>Necklaces</li></a>
+                        <a href="#"><li>Hoodies</li></a>
+                        <a href="#"><li>Jewelry Box</li></a>
+                        <a href="#"><li>T-shirt</li></a>
+                        <a href="#"><li>Jacket</li></a>
+                    </ul>
+                </div>
+                <div class="about-us">
+                    <h3>About Us</h3>
+                    <ul>
+                        <a href=""><li>Our Producers</li></a>
+                        <a href=""><li>Sitemap</li></a>
+                        <a href=""><li>FAQ</li></a>
+                        <a href=""><li>About Us</li></a>
+                        <a href=""><li>Terms & Conditions</li></a>
+                    </ul>
+                </div>
+                <div class="customer-services">
+                    <h3>Custome Services</h3>
+                    <ul>
+                        <a href=""><li>Contact Us</li></a>
+                        <a href=""><li>Track Your Order</li></a>
+                        <a href=""><li>Producto Care & Repair</li></a>
+                        <a href=""><li>Book An Appontment</li></a>
+                        <a href=""><li>Shipping & Returns</li></a>
+                    </ul>
+                </div>
+        </div><!--.footer-grid-->
+        <div class="footer-bar">
+            <div class="footer-bar__content">
+                <p>&copy; 2026 Lima, Inc</p>
+                <img src="img/icons_payment.svg" alt="payment methods">
+                <button>Scroll To Top
+                    <img src="img/icon-arrow.svg" alt="Arrow top">
+                </button>
+            </div>
+        </div>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+</html>

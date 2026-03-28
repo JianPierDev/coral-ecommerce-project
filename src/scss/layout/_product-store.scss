@@ -1,0 +1,62 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.product-selected {
+    @include m.container;
+    align-items: center;
+    margin-top: 5rem;
+    h2 {
+        text-align: left;
+        @include m.tablet {
+            font-size: 3.5rem;
+        }
+        @include m.desktop {
+            font-size: 4rem;
+        }
+    }
+    p {
+        font-size: 2.6rem;
+    }
+    button {
+        margin-top: 0;
+        font-size: 2.2rem;
+        border: none;
+    }
+    &__image {
+        text-align: center;
+        padding: 5rem;
+    }
+    &__description {
+        margin-bottom: 5rem;
+        @include m.tablet {
+            margin-top: 0;
+        }
+        .text {
+            font-size: 2rem;
+        }
+        .price {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+    }
+    @include m.tablet {
+        @include m.grid(2, 2rem);
+    }
+}
+.buttons {
+    @include m.grid(2, 1rem);
+    align-items: center;
+    .amount {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    .btn-shop {
+        width: 4rem;
+        height: 4rem;
+        display: block;
+    }
+    span {
+        font-size: 2.6rem;
+    }
+}

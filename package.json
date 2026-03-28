@@ -1,0 +1,24 @@
+{
+  "name": "proyecto-modulo-ii",
+  "version": "1.0.0",
+  "description": "Gulp, Sass",
+  "keywords": [
+    "Gulp",
+    "Sass"
+  ],
+  "license": "ISC",
+  "author": "Jian",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass src/scss:build/css",
+    "dev": "gulp devBuild",
+    "build": "gulp build"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "gulp": "^5.0.1",
+    "gulp-sass": "^6.0.1",
+    "sass": "^1.97.3"
+  }
+}

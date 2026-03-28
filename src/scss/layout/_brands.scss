@@ -1,0 +1,17 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.brands {
+    @include m.container;
+    &__content {
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+        @include m.grid(1, 4rem);
+        @include m.phone {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}
