@@ -11,6 +11,9 @@ Users can browse products, filter them by category and add items to a shopping c
 - Gulp
 - Javascript
 
+## Demo
+https://coral-store-project.netlify.app/
+
 ## Instalation
 
 ### Install dependencies
